@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psychologist Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#therapists">Therapists</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <section id="home">
+    <div class="hero">
+      <h1>Welcome to Peaceful Minds</h1>
+      <p>Your journey to mental well-being starts here.</p>
+      <canvas id="threeDCanvas"></canvas>
+    </div>
+  </section>
+  <section id="therapists">
+    <div class="therapists-container">
+      <h1> Our Therapists</h1>
+      <p>
+        Our team of experienced and compassionate therapists is here to help you navigate life's challenges.
+      </p>
+      <div class="therapists-grid">
+        <!-- Therapist 1 -->
+        <div class="therapist-card">
+          <img src="WhatsApp Image 2024-12-06 at 23.38.09_4eb81e81.jpg" alt="Dr. Shumila Zanib">
+          <h2>Dr. Shumila Zanib</h2>
+          <p>Psychiatrist and medical Dr in CDA hospital</p>
+          <p>Dr. Shumila specializes in anxiety, depression, and trauma recovery, offering empathetic care and evidence-based therapies.</p>
+        </div>
+        <!-- Therapist 2 -->
+        <div class="therapist-card">
+          <img src="one.jpg" alt="Dr. Aemen Eman">
+          <h2>Ms. Aemen Eman</h2>
+          <p>Psychologist, counselor, trainer 
+            CEO: the psychologist club 
+            CEO: YD0</p>
+          <p> Aemen focuses on relationship counseling, stress management, and self-esteem issues, helping clients build resilience.</p>
+        </div>
+        <!-- Therapist 3 -->
+        <div class="therapist-card">
+          <img src="two.jpg" alt="Dr. Areeba Nawaz">
+          <h2>Ms. Areeba Nawaz</h2>
+          <p>Counseling psychologist, therapist, individual, couple therapies,families and group</p>
+          <p>Areeba provides specialized care for children and adolescents, addressing behavioral challenges and developmental concerns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    
+        <div class="about-container">
+          <div class="about-text">
+            <h1>About Us</h1>
+            <p>
+              Our team includes a broad range of psychologists, counselors and therapists.We specialized in areas such as Anxiety, Depression, Relationship challenges and Stress Management.
+            </p>
+            <p>
+              We specialize in areas such as anxiety, depression, relationship challenges, and stress management. Our goal is to create a safe, supportive space where you can explore your thoughts and emotions to achieve lasting well-being.
+            </p>
+          </div>
+          <div class="about-3d">
+            <canvas id="aboutCanvas"></canvas>
+          </div>
+        </div>
+      
+  </section>
+
+  <section id="services">
+    <h1>Our Services</h1>
+    <p>We provide a wide range of psychological services tailored to help you achieve mental well-being.</p>
+    <div class="services-container">
+      <div class="service-card">
+        <h2>Individual Therapy</h2>
+        <p>Personalized one-on-one sessions to address anxiety, depression, and other personal challenges.</p>
+      </div>
+      <div class="service-card">
+        <h2>Couples Counseling</h2>
+        <p>Support for couples to improve communication, resolve conflicts, and strengthen relationships.</p>
+      </div>
+      <div class="service-card">
+        <h2>Stress Management</h2>
+        <p>Effective techniques to cope with stress and enhance your overall mental health.</p>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <section id="contact">
+    <div class="contact-container">
+        <div class="contact-text">
+          <h1>Contact Us</h1>
+          <p>
+            We're here to help. Reach out to schedule an appointment or for any inquiries. Your journey to better mental health starts with a conversation.
+          </p>
+        </div>
+        <div class="contact-form">
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+  
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+  
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+  
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+      <canvas id="contactCanvas"></canvas>
+  </section>
+
+  <footer class="psychology-footer">
+    <div class="footer-container">
+      <!-- Logo and Name -->
+      <div class="footer-logo">
+        <h2>Peaceful Minds</h2>
+        <p>Your Partner in Mental Wellness</p>
+      </div>
+  
+      <!-- Navigation Links -->
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Contact Info -->
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: mindpeace 505@gmail.com</p>
+        <p>Phone: </p>
+        <p>Aemen eman Syed: +92 302 9867221</p>
+        <p>Areeba Nawaz: +92 327 5465380</p>
+        <p>Address: 123 Wellness St, Serenity City</p>
+      </div>
+  
+      <!-- Social Media Links -->
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        
+        <a href="" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="" target="_blank" aria-label="Twitter"><i class="fab fa-instagram"></i></a>
+        <a href="" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="" target="_blank" aria-label="GitHub"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  
+    <!-- Footer Credits -->
+    <div class="footer-credits">
+      <p>&copy; 2024 MindCare. All rights reserved. Asmat-Ullah.</p>
+    </div>
+  </footer>
+  
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.152.2/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,528 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  header {
+    background: #6ab7d6;
+    padding: 15px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #e3f2fd;
+    position: relative;
+    height: 500px;
+  }
+  
+  canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  h2 {
+    color: #6ab7d6;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #about {
+    padding: 50px;
+    background-color: #e3f2fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .about-text {
+    flex: 1 1 50%;
+    padding: 20px;
+  }
+  
+  .about-text h1 {
+    color: #6ab7d6;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 260%;
+  }
+  
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .about-3d {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  canvas {
+    width: 100%;
+    height: 400px;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  #services {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #e3f2fd;
+  }
+  
+  #services h1 {
+    font-size: 36px;
+    color: #6ab7d6;
+    margin-bottom: 10px;
+  }
+  
+  #services p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+  }
+  
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .service-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .service-card h2 {
+    font-size: 24px;
+    color: #6ab7d6;
+    margin-bottom: 10px;
+  }
+  
+  .service-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+  #contact {
+  position: relative;
+  padding: 50px 20px;
+  background-color: #e3f2fd;
+  overflow: hidden;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 36px;
+  color: #6ab7d6;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-text {
+  flex: 1 1 40%;
+  padding: 20px;
+  color: #333;
+}
+
+.contact-form {
+  flex: 1 1 40%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  font-size: 14px;
+  color: #6ab7d6;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.contact-form button {
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background: #6ab7d6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #5a9dc7;
+}
+
+.contactCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.contact {
+    position: relative;
+    padding: 50px 20px;
+    background-color: #e3f2fd;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .contact h1 {
+    font-size: 36px;
+    color: #6ab7d6;
+    margin-bottom: 10px;
+  }
+  
+  #contact p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .contact-text {
+    flex: 1 1 40%;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .contact-form {
+    flex: 1 1 40%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #6ab7d6;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .contact-form button {
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background: #6ab7d6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background: #5a9dc7;
+  }
+  
+  .contactCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  /* Footer Styles */
+.psychology-footer {
+  background-color: #2a3d45; /* Calm dark tone */
+  color: #f1f1f1; /* Light text color */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-logo h2 {
+  font-size: 1.8rem;
+  color: #ffd700; /* Calming yellow */
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-style: italic;
+  color: #d1d1d1;
+}
+
+.footer-links,
+.footer-contact,
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3 {
+  font-size: 1.2rem;
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style-type: none;
+}
+
+.footer-links li {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffd700;
+}
+
+.footer-contact p,
+.footer-social a {
+  font-size: 0.9rem;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin: 5px;
+  text-decoration: none;
+  color: #f1f1f1;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ffd700;
+}
+
+.footer-credits {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #d1d1d1;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-links ul {
+    padding: 0;
+  }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .about-container,
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    max-width: 100%;
+  }
+
+  #threeDCanvas,
+  #aboutCanvas,
+  #contactCanvas {
+    height: 200px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .footer-credits {
+    font-size: 0.7rem;
+  }
+}
+#therapists {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #e3f2fd;
+}
+
+#therapists h1 {
+  font-size: 36px;
+  color: #6ab7d6;
+  margin-bottom: 10px;
+}
+
+#therapists p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.therapists-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.therapists-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.therapist-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.therapist-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.therapist-card h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.therapist-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.therapist-card p:last-child {
+  color: #555;
+  font-size: 14px;
+}
